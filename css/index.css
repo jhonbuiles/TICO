@@ -1,0 +1,31 @@
+main{
+    width: 100%;
+    /*El alto de la ventana, menos la altura del menú y del footer*/
+    min-height: calc(100vh - 50px - 25px); 
+} 
+body{
+    background-color: #c8e6c9;
+}
+footer{
+    background-color: #388e3c;
+}
+.contfooter{
+    margin: 0 !important;
+}
+.textomain{
+    margin: 50px;
+}
+h1{
+    color: #424242;
+    font-weight: bolder !important;
+}
+label{
+    color: black !important;
+}
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+
+ 

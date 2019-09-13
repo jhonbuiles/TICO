@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Contáctenos</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navegador -->
+        <div class="navbar-fixed">
+            <!-- Estructura despliegue -->
+            <ul id="dropdown1" class="dropdown-content green lighten-4">
+                <li><a class="black-text" href="Ferreteria.html">Ferretería <i class="material-icons">build</i></a></li>
+                <li><a class="black-text" href="Cerrajeria.html">Cerrajería<i class="material-icons">https</i></a></li>
+                <li><a class="black-text" href="Accesorios.html">Accesorios<i class="material-icons">headset_mic</i></a>
+                </li>
+            </ul>
+            <nav>
+                <div class="nav-wrapper green darken-4">
+                    <a href="index.html" class="brand-logo right"><i class="material-icons right">vpn_key</i>TICO</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Productos<i
+                                    class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="Servicios.html">Servicios</a></li>
+                        <li><a href="Contactanos.html">Contáctenos</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Responsive -->
+        <ul id="dropdown2" class="dropdown-content green lighten-4">
+            <li><a class="black-text" href="Ferreteria.html">Ferretería <i class="material-icons">build</i></a></li>
+            <li><a class="black-text" href="Cerrajeria.html">Cerrajería<i class="material-icons">https</i></a></li>
+            <li><a class="black-text" href="Accesorios.html">Accesorios<i class="material-icons">headset_mic</i></a>
+            </li>
+        </ul>
+        <ul class="sidenav green darken-4" id="mobile-demo">
+            <li><a class="white-text" href="index.html">Inicio</a></li>
+            <li><a class="dropdown-trigger white-text" href="#!" data-target="dropdown2">Productos<i
+                        class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="white-text" href="Contactanos.html">Contáctenos</a></li>
+            <li><a class="white-text" href="Servicios.html">Servicios</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <form action="">
+                    <div class="input-field col s12 l6">
+                        <input type="text" id="nombre">
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="input-field col s12 l6">
+                        <input type="text" id="apellido">
+                        <label for="apellido">Apellido</label>
+                    </div>
+                    <div class="input-field col s12 l6">
+                        <input type="text" id="telefono">
+                        <label for="telefono">Teléfono</label>
+                    </div>
+                    <div class="input-field col s12 l6">
+                        <input type="text" id="municipio">
+                        <label for="municipio">Municipio</label>
+                    </div>
+                    <div class="input-field col s12 l6">
+                        <input type="text" id="departamento">
+                        <label for="departamento">Departamento</label>
+                    </div>
+                    <div class="input-field col s12 l6">
+                        <input type="text" id="pais">
+                        <label for="pais">País</label>
+                    </div>
+                    <div class="input-field col s12 l6">
+                        <input type="email" id="email" class="validate">
+                        <label for="email">Email</label>
+                        <span class="helper-text" data-error="Escriba un correo válido"
+                            data-success="Correo válido"></span>
+                    </div>
+                    <div class="input-field col s12 l12">
+                        <textarea id="comentario" class="materialize-textarea"></textarea>
+                        <label for="comentario" name="comentario">Comentario</label>
+                    </div>
+                    <div class="input-field col s12 l12">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2232.838158863841!2d-75.55557977181175!3d6.299086885303784!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe991fe579b910c14!2sFerreteria%20Tico!5e0!3m2!1ses-419!2sco!4v1566872528842!5m2!1ses-419!2sco"
+                        name="mapa" width="950" height="450" frameborder="0" style="border:0;"
+                        allowfullscreen=""></iframe><br>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+        //javascript para lista desplegable
+        $(".dropdown-trigger").dropdown({
+            inDuration: 500,
+            outDuration: 1000,
+            hover: true,
+            constrainWidth: false,
+            coverTrigger: false,
+            alignment: 'right'
+        });
+        //funcion para imagenes pallarax
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+        $('#textarea1').val('New Text');
+        M.textareaAutoResize($('#textarea1'));
+    </script>
+
+    <footer class="page-footer green darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Llaves El TICO</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+
+                <div class="col l6 s12 ">
+                    <h5 class="white-text">Contacto</h5>
+                    <ul>
+                        <li><i class="material-icons ">call</i>&nbsp;&nbsp;&nbsp;<a class="grey-text text-lighten-3"
+                                href="Contactanos.html">(57) 2142136</a></li>
+                        <li><i class="material-icons ">email</i>&nbsp;&nbsp;&nbsp;<a class="grey-text text-lighten-3"
+                                href="Contactanos.html">jhonbuiles.2@gmail.com</a></li>
+                        <li><i class="material-icons ">location_on</i>&nbsp;&nbsp;&nbsp;<a
+                                class="grey-text text-lighten-3" href="Contactanos.html">Calle
+                                107 # 50b-1 - Medellín(Colombia)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright green darken-4">
+            <div class="container">
+                © 2019 Todos los derechos reservados
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
